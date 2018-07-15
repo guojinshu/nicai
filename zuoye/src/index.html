@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/index.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <span><img src="img/1.png" alt=""></span>
+            <span>必买大牌</span>
+            <span><img src="img/2.png" alt=""></span>
+        </header>
+        <section>
+            <div class="box">
+                <!-- <dl>
+                    <dt><img src="img/3.png" alt=""></dt>
+                    <dd><span>满300减70</span></dd>
+                </dl> -->
+
+            </div>
+            <script id="entry" type="text/x-handlebars-template">
+                {{#each this}} {{#each this}}
+                <dl>
+                    <dt><img src="{{img}}" alt=""></dt>
+                    <dd><span>{{title}}</span></dd>
+                </dl>
+                {{/each}} {{/each}}
+            </script>
+            <p class="q"><span><img src="img/1.png" alt=""></span>
+                <span>精选大牌</span>
+                <span><img src="img/2.png" alt=""></span></p>
+            <div class="li">
+                <dl>
+                    <dt><img src="img/12.png" alt=""></dt>
+                    <dd>
+                        <h3>笔记本电脑</h3>
+                        <p>最高立减500</p>
+                        <span>GO</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/13.png" alt=""></dt>
+                    <dd>
+                        <h3>潮流男鞋</h3>
+                        <p>男鞋199起</p>
+                        <span>GO</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/12.png" alt=""></dt>
+                    <dd>
+                        <h3>笔记本电脑</h3>
+                        <p>最高立减500</p>
+                        <span>GO</span>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="img/13.png" alt=""></dt>
+                    <dd>
+                        <h3>潮流男鞋</h3>
+                        <p>男鞋199起</p>
+                        <span>GO</span>
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li><span><img src="img/14.png" alt=""></span><span>主会场</span></li>
+                <li><span><img src="img/15.png" alt=""></span><span>全部会场</span></li>
+                <li><span><img src="img/16.png" alt=""></span><span>抢5折券</span></li>
+                <li><span><img src="img/17.png" alt=""></span><span>榜单会场</span></li>
+                <li><span><img src="img/18.png" alt=""></span><span>我的618</span></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="./js/libs/require.js" async='true' defer data-main="js/config.js"></script>
+    <script>
+        // require(['./js/config.js'], function() {
+        //     require(['index'])
+        // })
+    </script>
+</body>
+
+</html>
